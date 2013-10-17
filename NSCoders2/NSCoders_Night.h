@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NSCoders_Night : UIViewController{
-
+@interface NSCoders_Night : UIViewController <UIWebViewDelegate> {
+    
+IBOutlet UIWebView *nsCodersWebView;
 }
+
+@property (nonatomic,retain) IBOutlet UIWebView *nsCodersWebView;
+
 
 @end

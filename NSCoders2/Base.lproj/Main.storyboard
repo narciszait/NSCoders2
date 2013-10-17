@@ -121,7 +121,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="10" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="ytb-nO-kmV">
-                                <rect key="frame" x="20" y="75" width="280" height="192"/>
+                                <rect key="frame" x="20" y="97" width="280" height="192"/>
                                 <rect key="contentStretch" x="0.0" y="0.0" width="0.74999999999999978" height="1"/>
                                 <string key="text">Copenhagen Cocoa is an iOS 
 developer community that hosts 
@@ -135,7 +135,7 @@ You can check the links below:</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kfI-E8-h3N">
-                                <rect key="frame" x="20" y="282" width="106" height="44"/>
+                                <rect key="frame" x="20" y="310" width="106" height="44"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="CPH Cocoa">
@@ -150,7 +150,7 @@ You can check the links below:</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g6S-e4-xHa">
-                                <rect key="frame" x="160" y="282" width="140" height="44"/>
+                                <rect key="frame" x="160" y="310" width="140" height="44"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="NSCoders Night">
@@ -164,6 +164,13 @@ You can check the links below:</string>
                                     <segue destination="HK8-PJ-HfP" kind="push" id="PVX-vR-Ngp"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A little about Copenhagen Cocoa and NSCoders Night" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="233" translatesAutoresizingMaskIntoConstraints="NO" id="w3d-jb-rfb">
+                                <rect key="frame" x="39" y="37" width="233" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                     </view>
                     <tabBarItem key="tabBarItem" title="About" image="more" id="1op-wU-GdV"/>
@@ -171,7 +178,7 @@ You can check the links below:</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JBr-2Q-Ieh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1304" y="956"/>
+            <point key="canvasLocation" x="1309" y="956"/>
         </scene>
         <!--Cocoa - Copenhagen Cocoa-->
         <scene sceneID="sfF-g6-HQc">
@@ -237,10 +244,19 @@ You can check the links below:</string>
                         <viewControllerLayoutGuide type="bottom" id="Mna-lf-n29"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="RMh-8B-H9G">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4ey-EK-hSL">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
+                            </webView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" title="NSCoders Night" id="Jrg-po-Qyr">
                         <barButtonItem key="backBarButtonItem" title="Back" id="xY6-X8-jci"/>
                     </navigationItem>

@@ -34,8 +34,9 @@
 	// Do any additional setup after loading the view.
     NSLog(@"cocoacph");
     [self.navigationController setNavigationBarHidden:NO animated:YES];
+
+    cphCocoaWebView = [[UIWebView alloc] initWithFrame:CGRectMake(0.0, 40.0, self.view.bounds.size.width, self.view.bounds.size.height)];
     
-    cphCocoaWebView=[[UIWebView alloc] initWithFrame:self.view.bounds];
     [cphCocoaWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://copenhagencocoa.com"]]];
     [self.view addSubview:cphCocoaWebView];
     cphCocoaWebView.delegate=self;
@@ -51,7 +52,7 @@
     webView.scrollView.maximumZoomScale = rw;
     webView.scrollView.zoomScale = rw;
     
-    [webView setFrame:CGRectMake(0.0, 40.0, contentSize.width, contentSize.height + rw)];
+    //[webView setFrame:CGRectMake(0.0, 40.0, 320,480)];
 }
 
 
