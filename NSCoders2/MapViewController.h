@@ -24,7 +24,7 @@
 -(IBAction)showUserLocation:(id)sender;
 -(IBAction)showDrivingRoute:(id)sender;
 -(IBAction)showWalkingRoute:(id)sender;
--(IBAction)showPublicTransport:(id)sender;
+//-(IBAction)showPublicTransport:(id)sender;
 
 
 @end

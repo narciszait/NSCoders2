@@ -89,11 +89,11 @@
     [walkButton addTarget:self action:@selector(showWalkingRoute:) forControlEvents:UIControlEventTouchUpInside];
     [walkButton setFrame:CGRectMake(0, 0, 40, 42)];
     
-    UIImage *public = [UIImage imageNamed:@"public.png"];
-    UIButton *publicButton = [[UIButton alloc] init];
-    [publicButton setImage:public forState:UIControlStateNormal];
-    [publicButton addTarget:self action:@selector(showPublicTransport:) forControlEvents:UIControlEventTouchUpInside];
-    [publicButton setFrame:CGRectMake(0, 0, 40, 42)];
+//    UIImage *public = [UIImage imageNamed:@"public.png"];
+//    UIButton *publicButton = [[UIButton alloc] init];
+//    [publicButton setImage:public forState:UIControlStateNormal];
+//    [publicButton addTarget:self action:@selector(showPublicTransport:) forControlEvents:UIControlEventTouchUpInside];
+//    [publicButton setFrame:CGRectMake(0, 0, 40, 42)];
     
     UIImage *arrowDown = [UIImage imageNamed:@"arrow_down.png"];
     UIButton *arrowDownButton = [[UIButton alloc] init];
@@ -105,17 +105,17 @@
     UIBarButtonItem *button1 = [[UIBarButtonItem alloc] initWithCustomView:locateUserButton];
     UIBarButtonItem *button2 = [[UIBarButtonItem alloc] initWithCustomView:carButton];
     UIBarButtonItem *button3 = [[UIBarButtonItem alloc] initWithCustomView:walkButton];
-    UIBarButtonItem *button4 = [[UIBarButtonItem alloc] initWithCustomView:publicButton];
+//    UIBarButtonItem *button4 = [[UIBarButtonItem alloc] initWithCustomView:publicButton];
     UIBarButtonItem *button5 = [[UIBarButtonItem alloc] initWithCustomView:arrowDownButton];
     
     UIBarButtonItem *flexibleSpace1 = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
     UIBarButtonItem *flexibleSpace2 = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
     UIBarButtonItem *flexibleSpace3 = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
-    UIBarButtonItem *flexibleSpace4 = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
+//    UIBarButtonItem *flexibleSpace4 = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
     
     
     
-    NSArray *buttonItems = [NSArray arrayWithObjects:button1, flexibleSpace1, button2, flexibleSpace2, button3, flexibleSpace3, button4, flexibleSpace4, button5, nil];
+    NSArray *buttonItems = [NSArray arrayWithObjects:button1, flexibleSpace1, button2, flexibleSpace2, button3, flexibleSpace3, button5, nil]; //[NSArray arrayWithObjects:button1, flexibleSpace1, button2, flexibleSpace2, button3, flexibleSpace3, button4, flexibleSpace4, button5, nil];
     [toolbar setItems:buttonItems];
     
     
@@ -191,9 +191,9 @@
 
 }
 
--(IBAction)showPublicTransport:(id)sender{
-    NSLog(@"Public transport");
-}
+//-(IBAction)showPublicTransport:(id)sender{
+//    NSLog(@"Public transport");
+//}
 
 
 - (void)didReceiveMemoryWarning
