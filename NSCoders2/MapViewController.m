@@ -1,5 +1,5 @@
 //
-//  SecondViewController.m
+//  MapViewController.m
 //  NSCoders2
 //
 //  Created by Narcis Zait on 10/17/13.
@@ -47,7 +47,9 @@
     if ([sender isKindOfClass:[UIButton self]]) {
         UIButton *button = (UIButton *)sender;
         NSLog(@"the sending view is %@", button);
-        [UIView animateWithDuration:0.5 delay:0.0 options: UIViewAnimationOptionCurveLinear
+        [UIView animateWithDuration:0.2
+                              delay:0.0
+                            options: UIViewAnimationOptionCurveLinear
                          animations:^{
                              button.alpha=0.0f;
                          }

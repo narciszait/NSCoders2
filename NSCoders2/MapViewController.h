@@ -1,5 +1,5 @@
 //
-//  SecondViewController.h
+//  MapViewController.h
 //  NSCoders2
 //
 //  Created by Narcis Zait on 10/17/13.

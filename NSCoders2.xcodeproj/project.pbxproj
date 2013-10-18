@@ -10,7 +10,19 @@
 		EC31CD3C18115ABB003445B1 /* DisplayAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = EC31CD3B18115ABB003445B1 /* DisplayAnnotation.m */; };
 		EC31CD3E18115EB6003445B1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC31CD3D18115EB6003445B1 /* Images.xcassets */; };
 		EC31CD451811604B003445B1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC31CD4318116001003445B1 /* Default-568h@2x.png */; };
-		EC9FEB2C1811706E00345BD1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC9FEB2B1811706E00345BD1 /* MapKit.framework */; };
+		EC9FEB2E1811781E00345BD1 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC9FEB2D1811781E00345BD1 /* Accounts.framework */; };
+		EC9FEB301811782600345BD1 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC9FEB2F1811782600345BD1 /* Social.framework */; };
+		EC9FEB321811782C00345BD1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC9FEB311811782C00345BD1 /* QuartzCore.framework */; };
+		EC9FEB361811784900345BD1 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9FEB341811784900345BD1 /* CustomCell.m */; };
+		EC9FEB371811784900345BD1 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC9FEB351811784900345BD1 /* CustomCell.xib */; };
+		EC9FEB401811790200345BD1 /* background_shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = EC9FEB381811790200345BD1 /* background_shadow.png */; };
+		EC9FEB411811790200345BD1 /* background_shadow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC9FEB391811790200345BD1 /* background_shadow@2x.png */; };
+		EC9FEB421811790200345BD1 /* cancel.png in Resources */ = {isa = PBXBuildFile; fileRef = EC9FEB3A1811790200345BD1 /* cancel.png */; };
+		EC9FEB431811790200345BD1 /* cancel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC9FEB3B1811790200345BD1 /* cancel@2x.png */; };
+		EC9FEB441811790200345BD1 /* check.png in Resources */ = {isa = PBXBuildFile; fileRef = EC9FEB3C1811790200345BD1 /* check.png */; };
+		EC9FEB451811790200345BD1 /* check@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC9FEB3D1811790200345BD1 /* check@2x.png */; };
+		EC9FEB461811790200345BD1 /* logo_twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = EC9FEB3E1811790200345BD1 /* logo_twitter.png */; };
+		EC9FEB471811790200345BD1 /* logo_twitter@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC9FEB3F1811790200345BD1 /* logo_twitter@2x.png */; };
 		ECF883711810142500B29F5D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF883701810142500B29F5D /* Foundation.framework */; };
 		ECF883731810142500B29F5D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF883721810142500B29F5D /* CoreGraphics.framework */; };
 		ECF883751810142500B29F5D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF883741810142500B29F5D /* UIKit.framework */; };
@@ -47,7 +59,20 @@
 		EC31CD3D18115EB6003445B1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		EC31CD4318116001003445B1 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 		EC31CD4418116037003445B1 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
-		EC9FEB2B1811706E00345BD1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		EC9FEB2D1811781E00345BD1 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		EC9FEB2F1811782600345BD1 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		EC9FEB311811782C00345BD1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		EC9FEB331811784900345BD1 /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
+		EC9FEB341811784900345BD1 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
+		EC9FEB351811784900345BD1 /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
+		EC9FEB381811790200345BD1 /* background_shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background_shadow.png; sourceTree = "<group>"; };
+		EC9FEB391811790200345BD1 /* background_shadow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background_shadow@2x.png"; sourceTree = "<group>"; };
+		EC9FEB3A1811790200345BD1 /* cancel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cancel.png; sourceTree = "<group>"; };
+		EC9FEB3B1811790200345BD1 /* cancel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cancel@2x.png"; sourceTree = "<group>"; };
+		EC9FEB3C1811790200345BD1 /* check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check.png; sourceTree = "<group>"; };
+		EC9FEB3D1811790200345BD1 /* check@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check@2x.png"; sourceTree = "<group>"; };
+		EC9FEB3E1811790200345BD1 /* logo_twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_twitter.png; sourceTree = "<group>"; };
+		EC9FEB3F1811790200345BD1 /* logo_twitter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo_twitter@2x.png"; sourceTree = "<group>"; };
 		ECF8836D1810142500B29F5D /* NSCoders2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSCoders2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECF883701810142500B29F5D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		ECF883721810142500B29F5D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -82,7 +107,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC9FEB2C1811706E00345BD1 /* MapKit.framework in Frameworks */,
+				EC9FEB321811782C00345BD1 /* QuartzCore.framework in Frameworks */,
+				EC9FEB301811782600345BD1 /* Social.framework in Frameworks */,
+				EC9FEB2E1811781E00345BD1 /* Accounts.framework in Frameworks */,
 				ECF883BB18103E8700B29F5D /* CoreLocation.framework in Frameworks */,
 				ECF883731810142500B29F5D /* CoreGraphics.framework in Frameworks */,
 				ECF883751810142500B29F5D /* UIKit.framework in Frameworks */,
@@ -126,7 +153,9 @@
 		ECF8836F1810142500B29F5D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				EC9FEB2B1811706E00345BD1 /* MapKit.framework */,
+				EC9FEB311811782C00345BD1 /* QuartzCore.framework */,
+				EC9FEB2F1811782600345BD1 /* Social.framework */,
+				EC9FEB2D1811781E00345BD1 /* Accounts.framework */,
 				ECF883BA18103E8700B29F5D /* CoreLocation.framework */,
 				ECF883701810142500B29F5D /* Foundation.framework */,
 				ECF883721810142500B29F5D /* CoreGraphics.framework */,
@@ -193,6 +222,9 @@
 		ECF883A9181014D600B29F5D /* Twitter */ = {
 			isa = PBXGroup;
 			children = (
+				EC9FEB331811784900345BD1 /* CustomCell.h */,
+				EC9FEB341811784900345BD1 /* CustomCell.m */,
+				EC9FEB351811784900345BD1 /* CustomCell.xib */,
 			);
 			name = Twitter;
 			sourceTree = "<group>";
@@ -224,6 +256,14 @@
 		ECF883AC181015AD00B29F5D /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				EC9FEB381811790200345BD1 /* background_shadow.png */,
+				EC9FEB391811790200345BD1 /* background_shadow@2x.png */,
+				EC9FEB3A1811790200345BD1 /* cancel.png */,
+				EC9FEB3B1811790200345BD1 /* cancel@2x.png */,
+				EC9FEB3C1811790200345BD1 /* check.png */,
+				EC9FEB3D1811790200345BD1 /* check@2x.png */,
+				EC9FEB3E1811790200345BD1 /* logo_twitter.png */,
+				EC9FEB3F1811790200345BD1 /* logo_twitter@2x.png */,
 				EC31CD4418116037003445B1 /* Default@2x.png */,
 				EC31CD4318116001003445B1 /* Default-568h@2x.png */,
 			);
@@ -280,7 +320,7 @@
 					ECF8836C1810142500B29F5D = {
 						SystemCapabilities = {
 							com.apple.iOS = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -313,8 +353,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC9FEB371811784900345BD1 /* CustomCell.xib in Resources */,
+				EC9FEB431811790200345BD1 /* cancel@2x.png in Resources */,
+				EC9FEB471811790200345BD1 /* logo_twitter@2x.png in Resources */,
+				EC9FEB461811790200345BD1 /* logo_twitter.png in Resources */,
+				EC9FEB401811790200345BD1 /* background_shadow.png in Resources */,
 				EC31CD3E18115EB6003445B1 /* Images.xcassets in Resources */,
+				EC9FEB421811790200345BD1 /* cancel.png in Resources */,
 				EC31CD451811604B003445B1 /* Default-568h@2x.png in Resources */,
+				EC9FEB451811790200345BD1 /* check@2x.png in Resources */,
+				EC9FEB441811790200345BD1 /* check.png in Resources */,
+				EC9FEB411811790200345BD1 /* background_shadow@2x.png in Resources */,
 				ECF8837B1810142500B29F5D /* InfoPlist.strings in Resources */,
 				ECF883841810142500B29F5D /* Main.storyboard in Resources */,
 			);
@@ -343,6 +392,7 @@
 				ECF883871810142500B29F5D /* TwitterViewController.m in Sources */,
 				ECF8837D1810142500B29F5D /* main.m in Sources */,
 				EC31CD3C18115ABB003445B1 /* DisplayAnnotation.m in Sources */,
+				EC9FEB361811784900345BD1 /* CustomCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
