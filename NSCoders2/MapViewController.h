@@ -13,8 +13,18 @@
     IBOutlet MKMapView *mapView;
     CLLocationManager *locationManager;
     CLLocationCoordinate2D currentCenter;
+    
+    IBOutlet UIToolbar *toolbar;
 }
 
+@property (nonatomic,retain) IBOutlet UIToolbar *toolbar;
+@property (strong, nonatomic) IBOutlet UIButton *showToolbarButton;
+
+-(IBAction)showToolbar:(id)sender;
+-(IBAction)showUserLocation:(id)sender;
+-(IBAction)showDrivingRoute:(id)sender;
+-(IBAction)showWalkingRoute:(id)sender;
+-(IBAction)showPublicTransport:(id)sender;
 
 
 @end

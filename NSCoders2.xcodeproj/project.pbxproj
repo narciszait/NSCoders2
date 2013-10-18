@@ -45,8 +45,8 @@
 		EC31CD3A18115ABB003445B1 /* DisplayAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayAnnotation.h; sourceTree = "<group>"; };
 		EC31CD3B18115ABB003445B1 /* DisplayAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayAnnotation.m; sourceTree = "<group>"; };
 		EC31CD3D18115EB6003445B1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		EC31CD4318116001003445B1 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		EC31CD4418116037003445B1 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		EC31CD4318116001003445B1 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
+		EC31CD4418116037003445B1 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
 		ECF8836D1810142500B29F5D /* NSCoders2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSCoders2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECF883701810142500B29F5D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		ECF883721810142500B29F5D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -106,8 +106,6 @@
 		ECF883641810142500B29F5D = {
 			isa = PBXGroup;
 			children = (
-				EC31CD4418116037003445B1 /* Default@2x.png */,
-				EC31CD4318116001003445B1 /* Default-568h@2x.png */,
 				EC31CD3D18115EB6003445B1 /* Images.xcassets */,
 				ECF883761810142500B29F5D /* NSCoders2 */,
 				ECF883981810142500B29F5D /* NSCoders2Tests */,
@@ -226,6 +224,8 @@
 		ECF883AC181015AD00B29F5D /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				EC31CD4418116037003445B1 /* Default@2x.png */,
+				EC31CD4318116001003445B1 /* Default-568h@2x.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
