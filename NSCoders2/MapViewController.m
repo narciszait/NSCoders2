@@ -9,8 +9,9 @@
 #import "MapViewController.h"
 #import "DisplayAnnotation.h"
 
-@interface MapViewController ()
-
+@interface MapViewController (){
+    CLLocationCoordinate2D retroCafe;
+}
 @end
 
 @implementation MapViewController
@@ -27,7 +28,7 @@
     locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters;
     [locationManager startUpdatingLocation];
     
-    CLLocationCoordinate2D retroCafe = CLLocationCoordinate2DMake(55.69313, 12.54343);
+    retroCafe = CLLocationCoordinate2DMake(55.69313, 12.54343);
     MKCoordinateSpan span = {.latitudeDelta=0.003433,.longitudeDelta=0.003433}; //delta=0.003433
     MKCoordinateRegion region = {retroCafe, span};
     [mapView setRegion:region animated:YES];
@@ -119,7 +120,7 @@
     
     
     
-    [UIView animateWithDuration:0.25
+    [UIView animateWithDuration:0.20
                           delay:0.0
                         options: UIViewAnimationOptionCurveLinear
                      animations:^{
@@ -133,7 +134,7 @@
 }
 
 -(void)hideToolbar{
-    [UIView animateWithDuration:0.25
+    [UIView animateWithDuration:0.20
                           delay:0.0
                         options: UIViewAnimationOptionCurveLinear
                      animations:^{
@@ -167,10 +168,27 @@
 
 -(IBAction)showDrivingRoute:(id)sender{
     NSLog(@"driving route");
+   // CLLocationCoordinate2D userLocation=CLLocationCoordinate2DMake(locationManager.location.coordinate.latitude, locationManager.location.coordinate.longitude);
+    
+    MKPlacemark *endLocation = [[MKPlacemark alloc] initWithCoordinate:retroCafe addressDictionary:nil];
+    MKMapItem *endingItem = [[MKMapItem alloc] initWithPlacemark:endLocation];
+    
+    NSMutableDictionary *launchOptions = [[NSMutableDictionary alloc] init];
+    [launchOptions setObject:MKLaunchOptionsDirectionsModeDriving forKey:MKLaunchOptionsDirectionsModeKey];
+    
+    [endingItem openInMapsWithLaunchOptions:launchOptions];
 }
 
 -(IBAction)showWalkingRoute:(id)sender{
     NSLog(@"walking route");
+    MKPlacemark *endLocation = [[MKPlacemark alloc] initWithCoordinate:retroCafe addressDictionary:nil];
+    MKMapItem *endingItem = [[MKMapItem alloc] initWithPlacemark:endLocation];
+    
+    NSMutableDictionary *launchOptions = [[NSMutableDictionary alloc] init];
+    [launchOptions setObject:MKLaunchOptionsDirectionsModeWalking forKey:MKLaunchOptionsDirectionsModeKey];
+    
+    [endingItem openInMapsWithLaunchOptions:launchOptions];
+
 }
 
 -(IBAction)showPublicTransport:(id)sender{

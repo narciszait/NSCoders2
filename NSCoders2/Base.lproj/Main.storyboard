@@ -279,7 +279,6 @@ You can check the links below:</string>
     <resources>
         <image name="arrow_up" width="40" height="40"/>
         <image name="bright_squares" width="297" height="297"/>
-        <image name="bright_squares" width="297" height="297"/>
         <image name="chat" width="26" height="24"/>
         <image name="map" width="26" height="21"/>
         <image name="more" width="32" height="8"/>

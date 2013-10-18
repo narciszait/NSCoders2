@@ -10,6 +10,7 @@
 		EC31CD3C18115ABB003445B1 /* DisplayAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = EC31CD3B18115ABB003445B1 /* DisplayAnnotation.m */; };
 		EC31CD3E18115EB6003445B1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC31CD3D18115EB6003445B1 /* Images.xcassets */; };
 		EC31CD451811604B003445B1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC31CD4318116001003445B1 /* Default-568h@2x.png */; };
+		EC9FEB2C1811706E00345BD1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC9FEB2B1811706E00345BD1 /* MapKit.framework */; };
 		ECF883711810142500B29F5D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF883701810142500B29F5D /* Foundation.framework */; };
 		ECF883731810142500B29F5D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF883721810142500B29F5D /* CoreGraphics.framework */; };
 		ECF883751810142500B29F5D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF883741810142500B29F5D /* UIKit.framework */; };
@@ -27,7 +28,6 @@
 		ECF883B11810171100B29F5D /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF883B01810171100B29F5D /* AboutViewController.m */; };
 		ECF883B41810185700B29F5D /* CPH_Cocoa.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF883B31810185700B29F5D /* CPH_Cocoa.m */; };
 		ECF883B71810185D00B29F5D /* NSCoders_Night.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF883B61810185D00B29F5D /* NSCoders_Night.m */; };
-		ECF883B918103E7D00B29F5D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF883B818103E7D00B29F5D /* MapKit.framework */; };
 		ECF883BB18103E8700B29F5D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF883BA18103E8700B29F5D /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +47,7 @@
 		EC31CD3D18115EB6003445B1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		EC31CD4318116001003445B1 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 		EC31CD4418116037003445B1 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
+		EC9FEB2B1811706E00345BD1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		ECF8836D1810142500B29F5D /* NSCoders2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSCoders2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECF883701810142500B29F5D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		ECF883721810142500B29F5D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -73,7 +74,6 @@
 		ECF883B31810185700B29F5D /* CPH_Cocoa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPH_Cocoa.m; sourceTree = "<group>"; };
 		ECF883B51810185D00B29F5D /* NSCoders_Night.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSCoders_Night.h; sourceTree = "<group>"; };
 		ECF883B61810185D00B29F5D /* NSCoders_Night.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSCoders_Night.m; sourceTree = "<group>"; };
-		ECF883B818103E7D00B29F5D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		ECF883BA18103E8700B29F5D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -82,8 +82,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC9FEB2C1811706E00345BD1 /* MapKit.framework in Frameworks */,
 				ECF883BB18103E8700B29F5D /* CoreLocation.framework in Frameworks */,
-				ECF883B918103E7D00B29F5D /* MapKit.framework in Frameworks */,
 				ECF883731810142500B29F5D /* CoreGraphics.framework in Frameworks */,
 				ECF883751810142500B29F5D /* UIKit.framework in Frameworks */,
 				ECF883711810142500B29F5D /* Foundation.framework in Frameworks */,
@@ -126,8 +126,8 @@
 		ECF8836F1810142500B29F5D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EC9FEB2B1811706E00345BD1 /* MapKit.framework */,
 				ECF883BA18103E8700B29F5D /* CoreLocation.framework */,
-				ECF883B818103E7D00B29F5D /* MapKit.framework */,
 				ECF883701810142500B29F5D /* Foundation.framework */,
 				ECF883721810142500B29F5D /* CoreGraphics.framework */,
 				ECF883741810142500B29F5D /* UIKit.framework */,
@@ -277,6 +277,13 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = Narcis;
 				TargetAttributes = {
+					ECF8836C1810142500B29F5D = {
+						SystemCapabilities = {
+							com.apple.iOS = {
+								enabled = 1;
+							};
+						};
+					};
 					ECF883901810142500B29F5D = {
 						TestTargetID = ECF8836C1810142500B29F5D;
 					};
