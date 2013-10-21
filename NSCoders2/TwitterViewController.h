@@ -87,7 +87,7 @@
 -(IBAction)changePage;
 
 // Shows my developer info :)
--(IBAction)devbysupertecnoboff;
+//-(IBAction)devbysupertecnoboff;
 
 // This function (method) is in charge of updating the twitter user info.
 -(void)user_info;

@@ -40,12 +40,12 @@
     [UIView commitAnimations];
 }
 
--(IBAction)devbysupertecnoboff {
-    tweet_message = 2;
-    
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Info" message:@"Developed by Supertecnoboff. Check out my other items on CodeCanyon:" delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles: @"View Portfolio", nil];
-	[alert show];
-}
+//-(IBAction)devbysupertecnoboff {
+//    tweet_message = 2;
+//    
+//    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Info" message:@"Developed by Supertecnoboff. Check out my other items on CodeCanyon:" delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles: @"View Portfolio", nil];
+//	[alert show];
+//}
 
 -(IBAction)changebutton {
     
